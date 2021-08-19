@@ -12,9 +12,13 @@ jobs:
     name: whitespace
     runs-on: ubuntu-latest
     steps:
-      - run: |
+      - uses: actions/checkout@v2
+      - run: git status
+      - name: Check whitespace
+        run: |
+          set -Eeuo pipefail
           echo "Checking for whitespace issues..."
-          if git --no-pager grep --color -n --full-name -e ' $' -- $file_patterns
+          if git --no-pager grep --color -n --full-name -e ' $' -- *
           then
             echo "Error: trailing whitespace found in source file(s)"
             echo ""
@@ -26,5 +30,5 @@ jobs:
             # exit 1
           else
             echo "Whitespace check found no issues"
-          fi    
+          fi
         shell: bash
