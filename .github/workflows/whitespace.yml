@@ -16,7 +16,6 @@ jobs:
       - run: git status
       - name: Check whitespace
         run: |
-          set -Eeuo pipefail
           echo "Checking for whitespace issues..."
           if git --no-pager grep --color -n --full-name -e ' $' -- *
           then
