@@ -1,4 +1,4 @@
-# buildkite-docs
+# base-buildkite-docs
 
 This repository contains the documentation for the [Base Julia](https://github.com/JuliaLang/julia) CI setup.
 
