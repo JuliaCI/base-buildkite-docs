@@ -2,7 +2,7 @@ We support a pretty wide set of platforms (Windows, Linux (glibc and musl), macO
 
 The full list of platforms-architectures we build for are:
 
-Linux: 
+Linux:
 
 - glibc
    - x86_64
