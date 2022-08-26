@@ -29,7 +29,7 @@ Step 4: Switch to the appropriate user. You will need to enter your `sudo` passw
 sudo su sabae
 ```
 
-Step 5: Delete the correct cache folder. Note that the UUID `a66863c6-20e8-4ff4-8a62-49f30b1f605e` comes from [this project file](https://github.com/JuliaCI/sandboxed-buildkite-agent/blob/main/linux-sandbox.jl/Project.toml).
+Step 5: Delete the correct cache folder. Note that the UUID `a66863c6-20e8-4ff4-8a62-49f30b1f605e` comes from [this project file](https://github.com/JuliaCI/sandboxed-buildkite-agent/blob/main/Project.toml).
 ```
 rm -rf /home/sabae/.julia/scratchspaces/a66863c6-20e8-4ff4-8a62-49f30b1f605e/buildkite-agent-cache/amdci5.2
 ```
